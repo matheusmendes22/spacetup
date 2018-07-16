@@ -83,3 +83,7 @@ footer p{
     text-align: center;
     color: #fff;
 }
+footer input{
+    background-color: rgba(24, 20, 20, 0.596);
+    border:none;
+}
