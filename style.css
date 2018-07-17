@@ -11,6 +11,7 @@ body{
 .conteudo{
     background-color: rgba(24, 20, 20, 0.596);
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
@@ -19,7 +20,7 @@ body{
 }
 
 .conteudo h1{
-    color: rgb(49, 148, 158, 1);
+    color: #31949e;
     font-family: 'Poppins', sans-serif; 
     padding: 5px;
 }
@@ -39,16 +40,19 @@ body{
 }
 
 /* fim do body */
-#menuu{
-    background-color: #000;
-}
-#menu{
-    margin-left: 600px;
-    width: 50vw;
+
+#navegação{
+    width: 100%;
     display: flex;
     justify-content: space-evenly ;
+    align-items: center;
     background-color: #000;
     
+}
+#menu{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
 }
 #menu a{
     background-color: #000;
@@ -58,32 +62,73 @@ body{
     margin: 0;
 }
 #menu a:hover{
-    color: rgb(38, 122, 190);
+    color: #31949e;
     font-family: 'Poppins';
     font-weight: bold;
 }
-#logo h1{
-    margin-top: 0;
-    padding:0 ;
-}
+
 #logo{
-    padding: 25px 0px 0px 30px ;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #3a3939;
+    opacity: 0.7;
+    
 }
-#logo h1{
-    color: rgb(49, 148, 158, 1);
+#logo img{
+   width: 50px;
+   height: 50px;
 }
+#logo img:hover{
+    animation: foguete 2s linear infinite;
+}
+
+@keyframes foguete{
+    0%{
+        transform: translateY(0);
+    }
+    5%{
+        transform: translateX(2px);
+    }
+    9%{
+        transform: translateX(2px);
+    }
+    10%{
+        transform: translateX(-4px);
+    }
+    11%{
+        transform: translateX(2px);
+    }
+    12%{
+        transform: translateY(10px) rotateX(10deg);
+    }
+    15%{
+        transform: translateY(10px) rotateX(-10deg);
+
+    }
+    100%{
+        transform: translateY(-50px);
+    }
+}
+
 footer{
     background-color: #000;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 footer p{
     width: 100px;
     text-align: center;
     color: #fff;
+    font-family: 'Inconsolata', monospace;
 }
 footer input{
     background-color: rgba(24, 20, 20, 0.596);
     border:none;
+    text-align: center;
+    color:#fff;
+    border: 1px solid #3a3939;
 }
